@@ -4,7 +4,12 @@ in a new tab and be downloaded.
 
 <ul>
   <li ng-repeat="link in links">
-    <a href="{{ link.id }}" ng-click="loadSubDir($event, link.id)" rs-target="link.dl ? '_blank' : false">{{ link.label }}</a>
+    <a href="{{ link.id }}"
+        ng-click="loadSubDir($event, link.id)"
+        rs-target="link.dl ? '_blank' : false"
+    >
+      {{ link.label }}
+    </a>
   </li>
 </ul>
 
