@@ -1,0 +1,25 @@
+This incomplete, non-functional example generates a list of folder and file links.
+Clicking a folder loads the sub-directory, but clicking a filename causes it to open
+in a new tab and be downloaded.
+
+<ul>
+  <li ng-repeat="link in links">
+    <a href="{{ link.id }}" ng-click="loadSubDir($event, link.id)" rs-target="link.dl ? '_blank' : false">{{ link.label }}</a>
+  </li>
+</ul>
+
+<script src="rs-target.js"></script>
+<script>
+var links = [
+  [
+    id: 135,
+    label: 'some-folder/',
+    dl: false
+  ],
+  [
+    id: 246,
+    label: 'some-file.pdf',
+    dl: true
+  ],
+];
+</script>
