@@ -6,6 +6,6 @@ It's simple, but it's a good illustration of how an attribute's evaluated value 
 
 To use it just add the rs-target attribute with code as the value that will be evaluated to falsy or to the desired string. For example:
 
-<a href="#" rs-target="link.newPage ? '_blank' : false">Click Me</a>
+&lt;a href="#" rs-target="link.newPage ? '_blank' : false"&gt;Click Me&lt;/a&gt;
 
 If link.newPage is non-empty, the element will be assigned attribute target="_blank" however if link.newPage is empty, the element will have no "target" attribute at all.
