@@ -10,7 +10,7 @@ function rsTarget() {
         },
         function(targetValue) {
           if (!targetValue)
-            element.removeAttr('taret');
+            element.removeAttr('target');
           else
             element.attr({ target: targetValue });
         }
